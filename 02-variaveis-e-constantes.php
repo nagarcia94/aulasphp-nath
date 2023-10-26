@@ -32,8 +32,11 @@
 <hr>
 
 <?php
-// Constante nao usa $
+// Constante nao usa $ 
+// (foi usado DEFINE para demonstrar um modo antigo, mas é o mesmo que usar a const)
 define("AUTOR", "Nathalia Garcia");
+
+// Modo mais atual usando CONST
 const EMPRESA = "ABC Tecnologia";
 const ANO_FUNDACAO = 2000;
 ?>
