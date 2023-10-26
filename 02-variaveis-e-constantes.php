@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variavéis e constantes</title>
+
+<style>
+
+  p {font-family: Verdana;}
+
+.destaque {
+  background-color: yellow;
+  color: red;
+}
+
+</style>
+
+
+
 </head>
 <body>
   <h1> Variáveis e Constantes - PHP</h1>
@@ -17,7 +31,10 @@
   /* Formas de saída COMPLETAS VIA PHP */
 
 //  Saída interpolada
-  echo "<p>Estamos no $curso em $ano</p>";
+
+/* foi usado dois tipos de classe, um com aspas simples ('...') e outro com aspas dupla e barra (\"...\") pois ja existe aspas dupla no codigo php nesse exemplo */
+  echo "<p>Estamos no <span class='destaque'>$curso</span> em 
+  <span class=\"destaque\"> $ano</span></p>";
   
   // Não dá certo, as variavéis são tratadas como texto
   echo '<p>Estamos no $curso em $ano</p>';
@@ -28,7 +45,9 @@
   ?>
 <hr>
 <!-- Forma de saída abreviada/simplificada -->
-<p>Estamos no <?=$curso?> em <?=$ano?> </p>
+
+<!-- Nesse caso foi usado aspas dupla na class pois nao tinha aspas no codigo php -->
+<p>Estamos no <span class="destaque" > <?=$curso?> </span> em <?=$ano?> </p>
 <hr>
 
 <?php
