@@ -10,11 +10,12 @@
   <hr> 
 
   <?php
-  // Variáveis 
+  // Variáveis usa $
   $curso = "programador Web";
   $ano = 2023;
   $area = "Back-End";
-  
+  /* Formas de saída COMPLETAS VIA PHP */
+
 //  Saída interpolada
   echo "<p>Estamos no $curso em $ano</p>";
   
@@ -25,6 +26,21 @@
   echo '<p>Estamos no ' .$curso. ' em ' .$ano.'</p>';
   echo "<p>Estamos no " .$curso. " em " .$ano. "</p>";
   ?>
+<hr>
+<!-- Forma de saída abreviada/simplificada -->
+<p>Estamos no <?=$curso?> em <?=$ano?> </p>
+<hr>
+
+<?php
+// Constante nao usa $
+define("AUTOR", "Nathalia Garcia");
+const EMPRESA = "ABC Tecnologia";
+const ANO_FUNDACAO = 2000;
+?>
+<!-- SAIDAS -->
+<p>Autor do site: <?=AUTOR?> </p>
+<p>Nome da empresa: <?=EMPRESA?> </p>
+<p>Fundada em: <?=ANO_FUNDACAO?> </P>
 
 </body>
 </html>
