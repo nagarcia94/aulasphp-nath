@@ -11,7 +11,7 @@
     const IDADE = 29;
     ?>
 
-    <p>A Surfista <?=NOME?> de <?=IDADE?> anos foi medalhista de OURO nos jogos PAN AMERICANO 2023.</p>
+    <p>A Surfista <i><?=NOME?></i> de <b> <?=IDADE?></b> anos foi medalhista de OURO nos jogos PAN AMERICANO 2023.</p>
 </body>
 </html>
 
