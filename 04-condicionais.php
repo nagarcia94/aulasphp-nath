@@ -25,13 +25,21 @@
 //    Controle de Estoque
 $produto = "Ultrabook Dell";
 $qtdEmEstoque = 5; // o que temos no momento 
-$qtdCritica = 2; // minimo necessário
+$qtdCritica = 4; // minimo necessário
 ?>
 <h3>Produto: <?=$produto?></h3>
 <h4>Estoque: <?= $qtdEmEstoque?></h4>
 
 
+<?php
+/*  Se a quantidade em estoque for abaixo da quantidade crítica, então o sistema deve avisar e pedir para repor.*/
+if ($qtdEmEstoque < $qtdCritica) {
+    echo "<p> È necessário comprar/ repor!</p>";  
+} else{
+/*  Caso contrario, simplesmente mostrar que o estoque está normal. */
+echo "<p> Estoque normal </p>";
 
+}?>
 
 
 </body>
