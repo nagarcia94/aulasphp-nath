@@ -24,7 +24,7 @@
    <?php
 //    Controle de Estoque
 $produto = "Ultrabook Dell";
-$qtdEmEstoque = 1; // o que temos no momento 
+$qtdEmEstoque = 0; // o que temos no momento 
 $qtdCritica = 1; // minimo necessário
 ?>
 <h3>Produto: <?=$produto?></h3>
