@@ -38,6 +38,41 @@
 
 <!-- Para constante usa o nome da const que declarei para a saida. ex:(UNIDADE_SESC)
 para variavel usa-se $ para declarar a saida. EX:$banda -->
+<hr>
+
+<h2>Array associativo</h2>
+<?php 
+$livro = [
+    "titulo" => "senhor dos Anéis", 
+    "autor" => "J.R.R. tolkien",
+    "ano" => 1954,
+    "personagens" => ["Frodo", "Legolas"]
+];
+
+
+$filme = array (
+    "titulo" => "Velozes e Furiosos",
+    "genero" => "Ação"   
+);
+?>
+
+<h3>Saida de dados (array associativo)</h3>
+<p>Livro: <?=$livro["titulo"]?></p>
+<p>O cara que usa flechinhas: <?=$livro["personagens"][1]?></p>
+
+<hr>
+<h3>Comandos para analisar a estrutura : print_r () e var_dump ()</h3>
+<!-- Saídas sem formatação -->
+<?=print_r($bandas)?>
+<br><br>
+<?= var_dump($bandas)?>
+<br><br>
+<!-- Saída com formatação usando a tag <pre> -->
+    <pre><?=print_r($bandas)?></pre>
+    <br>
+    <pre><?= var_dump($bandas)?></pre>
+    <br>
+    <pre><?= var_dump($livro)?></pre>
 
 </body>
 </html>
