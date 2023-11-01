@@ -6,7 +6,7 @@
     <title>Conicionais</title>
 
     <style>
-        .repor { background-color: red;};
+        .repor { background-color: orange;};
         .urgente { background-color: red;};
         .normal {background-color: green;};
     </style>
