@@ -6,7 +6,7 @@
     <title>Conicionais</title>
 
     <style>
-        .repor { background-color: orange;};
+        .repor { background-color: red;};
         .urgente { background-color: red;};
         .normal {background-color: green;};
     </style>
@@ -30,8 +30,8 @@
    <?php
 //    Controle de Estoque
 $produto = "Ultrabook Dell";
-$qtdEmEstoque = 0; // o que temos no momento 
-$qtdCritica = 5; // minimo necessário
+$qtdEmEstoque = 5; // o que temos no momento 
+$qtdCritica = 3; // minimo necessário
 ?>
 <h3>Produto: <?=$produto?></h3>
 <h4>Estoque: <?= $qtdEmEstoque?></h4>
@@ -44,13 +44,13 @@ if ($qtdEmEstoque < $qtdCritica) {
 
     // Condicional Simples/ANINHADA
     if ($qtdEmEstoque === 0){
-        echo "<p class='urgente'> URGENTE</p>";
+        echo "<p class= 'urgente'> URGENTE</p>";
     }
 
 
 } else{
 /*  Caso contrario, simplesmente mostrar que o estoque está normal. */
-echo "<p class='normal'> Estoque normal </p>";
+echo "<p class= 'normal'> Estoque normal </p>";
 
 }?>
 
