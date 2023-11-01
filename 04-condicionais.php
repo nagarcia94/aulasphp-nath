@@ -18,7 +18,7 @@
 
     <h2>Simples</h2>
     <?php
-    $numero = 121;
+    $numero = 122;
 
     if($numero > 20){
         echo "<p>$numero é maior que 20. </p>";
@@ -30,8 +30,8 @@
    <?php
 //    Controle de Estoque
 $produto = "Ultrabook Dell";
-$qtdEmEstoque = 5; // o que temos no momento 
-$qtdCritica = 3; // minimo necessário
+$qtdEmEstoque = 0; // o que temos no momento 
+$qtdCritica = 0; // minimo necessário
 ?>
 <h3>Produto: <?=$produto?></h3>
 <h4>Estoque: <?= $qtdEmEstoque?></h4>
