@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conicionais</title>
+    <title>Condicionais</title>
 
     <style>
         .repor { background-color: orange;}
@@ -18,7 +18,7 @@
 
     <h2>Simples</h2>
     <?php
-    $numero = 122;
+    $numero = 150;
 
     if($numero > 20){
         echo "<p>$numero é maior que 20. </p>";
