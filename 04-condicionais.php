@@ -6,9 +6,9 @@
     <title>Conicionais</title>
 
     <style>
-        .repor { background-color: orange;};
-        .urgente { background-color: red;};
-        .normal {background-color: green;};
+        .repor { background-color: orange;}
+        .urgente { background-color: red;}
+        .normal {background-color: green;}
     </style>
 </head>
 <body>
