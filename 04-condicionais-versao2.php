@@ -1,3 +1,5 @@
+<?php include "recurso.php";?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,6 +24,7 @@
 </head>
 
 <body>
+    <p> <?= ESCOLA ?> - <?= $anoLetivo?></p>
     <h1>Condicionais (if, else, elseif)</h1>
     <p>Versão 2</p>
     <hr>
