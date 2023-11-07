@@ -1,3 +1,4 @@
+<?php include "recurso.php";?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,6 +15,8 @@
 </head>
 
 <body>
+
+<p> <?= ESCOLA ?> - <?= $anoLetivo?></p>
     <h1>Loops</h1>
     <hr>
     <h2>Tradicionais: for, while, do/while</h2>
