@@ -6,9 +6,9 @@
     <title>Condicionais</title>
 
     <style>
-        .repor { background-color: orange;}
-        .urgente { background-color: red;}
-        .normal {background-color: green;}
+        .repor { color: orange;}
+        .urgente { color: red;}
+        .normal {color: green;}
     </style>
 </head>
 <body>
