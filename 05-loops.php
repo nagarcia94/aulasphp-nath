@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loops</title>
+
+
+    <style>
+        ol li:nth-child(odd){ color: green;}
+        ol li:nth-child(even){ color: red;}
+        </style>
 </head>
 
 <body>
