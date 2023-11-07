@@ -29,7 +29,7 @@
    <h2> Composta (if/else)</h2>
    <?php
 //    Controle de Estoque
-$produto = "Ultrabook Dell";
+$produto = "Ultrabook";
 $qtdEmEstoque = 0; // o que temos no momento 
 $qtdCritica = 13; // minimo necessário
 ?>
@@ -54,6 +54,21 @@ echo "<p class= 'normal'> Estoque normal </p>";
 
 }?>
 
+<h2> Encadeada (if, else e elseif)</h2>
 
+<?php
+// Verificando o produto para dar uma garantia 
+if ($produto == "Ultrabook"){
+    $garantia= 5;
+}elseif ($produto == "Geladeira"){
+    $garantia = 3;
+} elseif ($produto == "tv"){
+    $garantia = 2;
+}else {
+    $garantia = 1;
+}
+?>
+
+<p> O produto <?=$produto?> possui garantia de <?=$garantia?> anos.</p>
 </body>
 </html>
