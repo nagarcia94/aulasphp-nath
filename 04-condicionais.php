@@ -62,13 +62,27 @@ if ($produto == "Ultrabook"){
     $garantia= 5;
 }elseif ($produto == "Geladeira"){
     $garantia = 3;
-} elseif ($produto == "tv"){
+} elseif ($produto == "Smartv"){
     $garantia = 2;
 }else {
     $garantia = 1;
 }
 ?>
 
-<p> O produto <?=$produto?> possui garantia de <?=$garantia?> anos.</p>
+<p> O produto <?=$produto?> possui garantia de <?=$garantia?> ano<?php if ($garantia>1) echo"s"?>.</p>
+
+<h3>Encadeada usando switch/case</h3>
+<!-- switch(analise/escolha/avalie) -->
+<?php switch($produto){
+    case "Ultrabook": $garantia = 5; break;
+    case "Geladeira": $garantia = 3; break;
+    case "Smartv": $garantia = 2; break;
+    default : $garantia = 1; break;
+}
+?>
+
+<p>Produto: <?=$produto?></p>
+<p>Garantia: <?=$garantia?></p>
+
 </body>
 </html>
