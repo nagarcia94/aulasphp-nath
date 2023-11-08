@@ -15,6 +15,11 @@
 </head>
 
 <body>
+    <!-- Usando foreach para acessar os dados do array criado em outro arquivo (acessivel devido ao include) -->
+<?php foreach ($linguagens as $linguagem){?> 
+<p><i><?=$linguagem?></i></p>
+<?php}?>
+
 
 <p> <?= ESCOLA ?> - <?= $anoLetivo?></p>
     <h1>Loops</h1>
