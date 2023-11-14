@@ -9,7 +9,7 @@
 <body>
 <?php
 $dados= [ 
-    "usuario" => "fred",
+    "usuario" => "FRED",
     "senha" => "xxx0123",
     "idade" => 29,
     "cidade" => "São Paulo",

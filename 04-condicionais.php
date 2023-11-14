@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conicionais</title>
+    <title>Condicionais</title>
 
     <style>
         .repor { background-color:orangered;}
@@ -31,7 +31,7 @@
    <h2> Composta (if/else)</h2>
    <?php
 //    Controle de Estoque
-$produto = "Ultrabook Dell";
+$produto = "Ultrabook";
 $qtdEmEstoque = 0; // o que temos no momento 
 $qtdCritica = 10; // minimo necessário
 ?>
@@ -46,7 +46,7 @@ if ($qtdEmEstoque < $qtdCritica) {
 
     // Condicional Simples/ANINHADA
     if ($qtdEmEstoque === 0){
-        echo "<p class='urgente'> URGENTE</p>";
+        echo "<p class= 'urgente'> URGENTE</p>";
     }
 
 
@@ -56,6 +56,35 @@ echo "<p class= 'normal'> Estoque normal </p>";
 
 }?>
 
+<h2> Encadeada (if, else e elseif)</h2>
+
+<?php
+// Verificando o produto para dar uma garantia 
+if ($produto == "Ultrabook"){
+    $garantia= 5;
+}elseif ($produto == "Geladeira"){
+    $garantia = 3;
+} elseif ($produto == "Smartv"){
+    $garantia = 2;
+}else {
+    $garantia = 1;
+}
+?>
+
+<p> O produto <?=$produto?> possui garantia de <?=$garantia?> ano<?php if ($garantia>1) echo"s"?>.</p>
+
+<h3>Encadeada usando switch/case</h3>
+<!-- switch(analise/escolha/avalie) -->
+<?php switch($produto){
+    case "Ultrabook": $garantia = 5; break;
+    case "Geladeira": $garantia = 3; break;
+    case "Smartv": $garantia = 2; break;
+    default : $garantia = 1; break;
+}
+?>
+
+<p>Produto: <?=$produto?></p>
+<p>Garantia: <?=$garantia?></p>
 
 </body>
 </html>
