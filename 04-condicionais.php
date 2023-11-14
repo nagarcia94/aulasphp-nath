@@ -6,9 +6,11 @@
     <title>Conicionais</title>
 
     <style>
-        .repor { background-color: orange;};
-        .urgente { background-color: red;};
-        .normal {background-color: green;};
+        .repor { background-color:orangered;}
+
+        .urgente { background-color: red;}
+
+        .normal {background-color: green;}
     </style>
 </head>
 <body>
@@ -18,7 +20,7 @@
 
     <h2>Simples</h2>
     <?php
-    $numero = 121;
+    $numero = 124;
 
     if($numero > 20){
         echo "<p>$numero é maior que 20. </p>";
@@ -31,7 +33,7 @@
 //    Controle de Estoque
 $produto = "Ultrabook Dell";
 $qtdEmEstoque = 0; // o que temos no momento 
-$qtdCritica = 5; // minimo necessário
+$qtdCritica = 10; // minimo necessário
 ?>
 <h3>Produto: <?=$produto?></h3>
 <h4>Estoque: <?= $qtdEmEstoque?></h4>
@@ -50,7 +52,7 @@ if ($qtdEmEstoque < $qtdCritica) {
 
 } else{
 /*  Caso contrario, simplesmente mostrar que o estoque está normal. */
-echo "<p class='normal'> Estoque normal </p>";
+echo "<p class= 'normal'> Estoque normal </p>";
 
 }?>
 
