@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-    <h1>Condicionais (if, else, elseif)</h1>
+    <h1>Condicional (if, else, elseif)</h1>
     <hr>
 
 
